@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media only screen and (min-width: 1200px) {
+    width: 60%;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.navbar {
+  align-self: flex-end;
+  display: flex;
+  margin-right: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  border-bottom: solid 2px #8d27da;
+  color: #8d27da;
+  margin: 0 10px;
+}
+.navbar a:hover {
+  border-bottom: solid 2px #d82881;
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  justify-content: center;
+  padding: 0.5rem 0 1rem 0;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.5) !important;
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease-in;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.title {
+  font-size: 1.8rem;
+  vertical-align: 0.9rem;
+  display: inline;
+  align-self: center;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(36%, #d82881), to(#8d27da));
+  background: -webkit-linear-gradient(left, #d82881 36%, #8d27da);
+  background: -o-linear-gradient(left, #d82881 36%, #8d27da 100%);
+  background: linear-gradient(90deg, #d82881 36%, #8d27da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  color: transparent;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 20px;
+
+  @media only screen and (min-width: 600px) {
+    width: 50px;
+    height: 50px;
+  }
+}

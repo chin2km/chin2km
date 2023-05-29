@@ -1,0 +1,13 @@
+.typing {
+  width: auto;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  animation: 2s bulge infinite ease-out;
+
+  @keyframes bulge {
+    50% {
+      transform: scale(1.3);
+    }
+  }
+}

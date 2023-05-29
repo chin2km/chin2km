@@ -7,12 +7,20 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { cssBundleHref } from "@remix-run/css-bundle";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
-import Navigation from "~/components/Navigation";
+import { Header } from "~/components/Header/Header";
+
+import styles from "./styles.module.css"
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [
+    { rel: "stylesheet", href: tailwindStylesheetUrl },
+    ...(cssBundleHref
+      ? [{ rel: "stylesheet", href: cssBundleHref }]
+      : []),
+  ];
 };
 
 export const meta: V2_MetaFunction = () => ([{
@@ -23,14 +31,16 @@ export const meta: V2_MetaFunction = () => ([{
 
 export default function App() {
   return (
-    <html lang="en">
+    <html>
       <head>
         <Meta />
         <Links />
       </head>
       <body>
-        <Navigation />
-        <Outlet />
+        <div className={styles.layout}>
+          <Header />
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
