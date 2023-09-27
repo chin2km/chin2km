@@ -12,7 +12,7 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { Header } from "~/components/Header/Header";
 
-import styles from "./styles.module.css"
+import "./layout.css"
 
 export const links: LinksFunction = () => {
   return [
@@ -37,7 +37,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className={styles.layout}>
+        <div className={"layout"}>
           <Header />
           <Outlet />
         </div>

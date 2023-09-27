@@ -1,0 +1,24 @@
+.layout {
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  position: relative;
+}
+
+.stylish-h {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(36%, #d82881), to(#8d27da));
+  background: -webkit-linear-gradient(left, #d82881 36%, #8d27da);
+  background: -o-linear-gradient(left, #d82881 36%, #8d27da 100%);
+  background: linear-gradient(90deg, #d82881 36%, #8d27da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  color: transparent;
+}
+
+/*# sourceMappingURL=layout.css.map */

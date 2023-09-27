@@ -1,0 +1,56 @@
+.box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 2px 3px 15px #000 !important;
+  background: linear-gradient(to bottom, rgb(27, 27, 27), #000) !important;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #8d27da;
+  height: 15rem;
+  opacity: 1 !important;
+}
+.box > * {
+  transition: all 0.7s ease-in-out;
+  opacity: 0.1;
+}
+.box[data-inview=true] {
+  border-image: linear-gradient(90deg, #d82881 36%, #8d27da) 1;
+  transform: scale(1.1) !important;
+}
+.box[data-inview=true] > * {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .box:hover {
+    transform: scale(1.15) !important;
+  }
+}
+.box a {
+  text-decoration: none;
+  color: white;
+}
+
+.teaserImage {
+  opacity: 0.9;
+  max-width: 90%;
+  max-height: 8rem;
+  align-self: center;
+  border-radius: 3px;
+  margin: 1rem 0rem;
+}
+
+.tag {
+  background: linear-gradient(75deg, #d82881 10%, #8d27da);
+  opacity: 0.8;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  margin: 0.2rem;
+  padding: 0.1rem 0.5rem;
+  float: right;
+  display: block;
+}
+
+/*# sourceMappingURL=teaser.module.css.map */
