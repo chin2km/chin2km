@@ -44,6 +44,8 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+
+        <h1>HELLO</h1>
       </body>
     </html>
   );
