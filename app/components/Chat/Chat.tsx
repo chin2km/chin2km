@@ -25,8 +25,6 @@ export const Chat: FunctionComponent<IProps> = ({ data: intros }) => {
     let interval: ReturnType<typeof setInterval>;
     let idx = 0;
 
-
-
     useEffect(() => {
         const pushChat = () => {
             if (idx < intros.length) {

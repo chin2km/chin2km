@@ -8,7 +8,6 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { cssBundleHref } from "@remix-run/css-bundle";
-
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { Header } from "~/components/Header/Header";
 
@@ -44,8 +43,6 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-
-        <h1>HELLO</h1>
       </body>
     </html>
   );
