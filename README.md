@@ -1,3 +1,3 @@
 # Hi there 👋🏻
 
-Go to [chintu-mohandas.com](https://chintu-mohandas.com)
+Go to [www.chintu-mohandas.com](https://chintu-mohandas.com)
