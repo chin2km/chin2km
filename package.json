@@ -19,10 +19,12 @@
     "isbot": "5.1.26",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-pdf": "^10.2.0",
     "react-router": "7.6.3"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.7.5",
+    "@cloudflare/workers-types": "^4.20251212.0",
     "@react-router/dev": "7.6.3",
     "@tailwindcss/vite": "4.1.4",
     "@types/node": "24.0.4",
@@ -41,7 +43,8 @@
     "deploy": "wrangler deploy",
     "dev": "react-router dev",
     "preview": "npm run build && vite preview",
-    "typecheck": "npm run typegen && tsc -b"
+    "ts-check": "tsc -b",
+    "ts-check:watch": "tsc -b --watch"
   },
   "type": "module"
 }
